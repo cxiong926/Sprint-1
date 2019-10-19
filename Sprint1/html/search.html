@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+		<meta name="author" content="Bobby Xiong">
+		<meta content="width=device-width, initial-scale=1" name="viewport">
+		
+		<title>Find an Album</title>
+	
+		<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+		
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+		
+		<!-- JavaScript -->
+		<script src="../scripts/scripts.js"></script>
+		
+		<!-- Custom styles for the website -->
+		<link href="../style/style.css" rel="stylesheet">
+		
+		<!-- Tab Icon -->
+		<link rel="icon" type="image/png" href="../images/me.png">
+		
+	</head>
+
+	
+	<body>
+	
+		<nav class="navbar navbar-expand-lg navbar-light bg-light mb-4">
+			<span class="navbar-brand mb-0 h1">Sprint 1 Assignment</span>
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+
+			<div class="collapse navbar-collapse" id="navbarSupportedContent">
+			
+				<ul class="navbar-nav mr-auto">
+					<li class="nav-item">
+						<a class="nav-link" href="index.html">Home</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="survey.html">Survey</a>
+					</li>
+					<li class="nav-item active">
+						<a class="nav-link" href="search.html">Find an Album<span class="sr-only">(current)</span></a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="privacy.html">Privacy Policy<span class="sr-only">(current)</span></a>
+					</li>
+				</ul>
+				
+			</div>
+		</nav>
+	
+		<div class="container wrapper">
+			<h1 class="uw">Find an Album</h1><hr>
+				<p class="text-center">Use this form to search for an album.</p>
+			
+			<form class="border rounded col-md-10 mx-auto px-4" id="survey" method="POST" action="action.html">
+			
+				<div class="form-group row mt-3 mb-2">
+					<label class="col-sm-4 col-form-label">Album Title</label>
+						<div class="col-sm-8">
+							<input type="text" id="albumTitle" class="form-control" placeholder="">
+						</div>
+				</div>
+				
+				<div class="form-group row mt-3 mb-2">
+					<label class="col-sm-4 col-form-label">Album Artist</label>
+						<div class="col-sm-8">
+							<input type="text" id="albumArtist" class="form-control" placeholder="">
+						</div>
+				</div>
+				
+				<div class="form-group row pt-2">
+					<div class="col-sm-4">What is your major?</div>
+					<div class="col-sm-8">
+						<table class="mx-auto">
+							<tr>
+								<td class="majorCell">
+									<div class="custom-control custom-checkbox">
+										<input type="checkbox" name="major" class="custom-control-input" id="check1">
+										<label class="custom-control-label" for="check1">CIS-AppDev</label>
+									</div>
+								</td>
+								<td class="majorCell">
+									<div class="custom-control custom-checkbox">
+										<input type="checkbox" name="major" class="custom-control-input" id="check2">
+										<label class="custom-control-label" for="check2">CIS-Networking</label>
+									</div>
+								</td>
+								<td class="majorCell">
+									<div class="custom-control custom-checkbox">
+										<input type="checkbox" name="major" class="custom-control-input" id="check3">
+										<label class="custom-control-label" for="check3">WDMD</label>
+									</div>
+								</td>
+							</tr>
+							<tr>
+								<td class="majorCell">
+									<div class="custom-control custom-checkbox">
+										<input type="checkbox" name="major" class="custom-control-input" id="check4">
+										<label class="custom-control-label" for="check4">WD</label>
+									</div>
+								</td>
+								<td class="majorCell">
+									<div class="custom-control custom-checkbox">
+										<input type="checkbox" name="major" class="custom-control-input" id="check5">
+										<label class="custom-control-label" for="check5">HTI</label>
+									</div>
+								</td>
+								<td class="majorCell">
+									<div class="custom-control custom-checkbox">
+										<input type="checkbox" name="major" class="custom-control-input" id="check6">
+										<label class="custom-control-label" for="check6">Other</label>
+									</div>
+								</td>
+							</tr>
+							
+						</table>
+					</div>
+				</div>
+				
+				<fieldset class="form-group">
+					<div class="row pt-2">
+						<div class="col-form-label col-sm-4 pt-0">What grade do you expect to receive in CNMT 310?</div>
+						<div class="col-sm-8">
+						
+							<div class="form-check d-flex justify-content-around flex-wrap">
+								<div class="custom-control custom-radio custom-control-inline">
+									<input type="radio" id="gradeA" name="grade" value="A" class="custom-control-input">
+									<label class="custom-control-label" for="gradeA">A</label>
+								</div>
+								
+								<div class="custom-control custom-radio custom-control-inline">
+								   <input type="radio" id="gradeB" name="grade" value="B" class="custom-control-input">
+								   <label class="custom-control-label" for="gradeB">B</label>
+								</div>
+								
+								<div class="custom-control custom-radio custom-control-inline">
+								   <input type="radio" id="gradeC" name="grade" value="C" class="custom-control-input">
+								   <label class="custom-control-label" for="gradeC">C</label>
+								</div>
+								
+								<div class="custom-control custom-radio custom-control-inline">
+								   <input type="radio" id="gradeD" name="grade" value="D" class="custom-control-input">
+								   <label class="custom-control-label" for="gradeD">D</label>
+								</div>
+								
+								<div class="custom-control custom-radio custom-control-inline">
+								   <input type="radio" id="gradeF" name="grade" value="F" class="custom-control-input">
+								   <label class="custom-control-label" for="gradeF">F</label>
+								</div>
+								
+							</div>
+							
+						</div>
+					</div>
+				</fieldset>
+				
+				<fieldset class="form-group">
+					<div class="row pt-2">
+						<div class="col-form-label col-sm-4 pt-0">What is your favorite pizza topping?</div>
+						<div class="col-sm-8">
+						
+							<div class="form-check d-flex justify-content-around flex-wrap">
+								<div class="custom-control custom-radio custom-control-inline">
+									<input type="radio" id="rad6" name="topping" class="custom-control-input">
+									<label class="custom-control-label" for="rad6">Chicken</label>
+								</div>
+								
+								<div class="custom-control custom-radio custom-control-inline">
+								   <input type="radio" id="rad7" name="topping" class="custom-control-input">
+								   <label class="custom-control-label" for="rad7">Cheese</label>
+								</div>
+								
+								<div class="custom-control custom-radio custom-control-inline">
+								   <input type="radio" id="rad8" name="topping" class="custom-control-input">
+								   <label class="custom-control-label" for="rad8">Mushroom</label>
+								</div>
+								
+								<div class="custom-control custom-radio custom-control-inline">
+								   <input type="radio" id="rad9" name="topping" class="custom-control-input">
+								   <label class="custom-control-label" for="rad9">Sausage</label>
+								</div>
+								
+								<div class="custom-control custom-radio custom-control-inline">
+								   <input type="radio" id="grade0" name="topping" class="custom-control-input">
+								   <label class="custom-control-label" for="grade0">Ham</label>
+								</div>
+								
+							
+							</div>
+							
+						</div>
+					</div>
+				</fieldset>
+				
+				<div class="form-group row">
+					<div class="col text-center">
+						<button type="submit" class="btn btn-primary">Search</button>
+					</div>
+				</div>
+			
+			</form>
+		
+		</div>
+		
+		
+	</body>
+	
+
+
+
+</html>
